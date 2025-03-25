@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #920505;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+        }
+        .navbar ul li{ /* how the list should be arranged*/
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        .navbar ul li a{ /* how the contents of the list should be*/
+            text-decoration: none;/*gets rid of the anchor underline*/
+            color: #f4f4f4;
+            text-transform: uppercase;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        main img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        h1 {
+            margin: 0;
+            color:#920505;
+            font-size: 2em;
+            text-align: center;
+        }
+        p {
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+
+        .navbar a {
+            color: #f4f4f4;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .logo{
+            width: 60px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar"><!-- NavBarLinks to other pages -->
+        <img src="../Web101/images/logo.jpeg" class="logo">
+        <ul>
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="product.html">Services</a> </li>
+            <li> <a href="about.html">About Us</a> </li>
+        </ul>
+    </div>
+
+    <!-- Main Content Section -->
+    <main>
+        <h1>Our Mission</h1>
+        <p>We are a logistics company committed to providing fast, reliable, and affordable services for all your delivery, pickup, and errand needs. Our goal is to ensure that every customer experiences convenience, professionalism, and exceptional service.</p>
+
+        <!-- Image Section -->
+        <img src="Bikeman.jpg" alt="An image of a delivery man" />
+
+        <p>Here at our company, we value honesty, integrity, and customer satisfaction. We strive to meet your needs with precision and care, no matter how big or small the task is.</p>
+
+    </main>
+
+</body>
+</html>

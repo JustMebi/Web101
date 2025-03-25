@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f4f4;
+    background-image: linear-gradient(rgba(48, 48, 48, 0.75),rgba(0, 0, 0, 0.75)),url(background.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+.logo{
+    width: 60px;
+    cursor: pointer;
+}
+
+/* Links Styling */
+.navbar{
+    /*background-color: #2e2c2c;*/
+    width: 95%;
+    margin:auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{ /* how the list should be arranged*/
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{ /* how the contents of the list should be*/
+    text-decoration: none;/*gets rid of the anchor underline*/
+    color: #f4f4f4;
+    text-transform: uppercase;
+}
+.navbar ul li::after{ /* the line under/after the contents of the list*/
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #8B0000;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{ /* the hover effect*/
+    width: 100%;
+}
+
+/* Main Section Styling */
+.main {
+    padding: 20px;
+    text-align: center;
+    color:#f4f4f4;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border:3px solid rgb(180, 24, 24);
+    background: transparent;
+    color:solid #8B0000;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+button a{ /* how the contents of the list should be*/
+    text-decoration: none;/*gets rid of the anchor underline*/
+    color: #8B0000;
+    text-transform: uppercase;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #8B0000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
